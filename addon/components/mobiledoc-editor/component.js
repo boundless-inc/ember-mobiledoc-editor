@@ -289,7 +289,7 @@ export default Component.extend({
     editor.destroy();
   },
 
-  'on-change': () => {},
+  'on-change'() {},
 
   postDidChange(editor) {
     let serializeVersion = this.get('serializeVersion');
@@ -326,13 +326,13 @@ export default Component.extend({
 
   },
 
-  'will-create-editor': () => {},
+  'will-create-editor'() {},
 
   willCreateEditor() {
     this['will-create-editor']();
   },
 
-  'did-create-editor': () => {},
+  'did-create-editor'() {},
 
   didCreateEditor(editor) {
     this['did-create-editor'](editor);
